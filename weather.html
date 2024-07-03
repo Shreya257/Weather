@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Online</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body onload="getData()">
+    <div class="box">
+        <input id="search" class="search" type="text" value="Bengaluru" onchange="getData()">
+        <div>
+            <h1 id="temp">26<sup>o</sup>C</h1>
+            <p style="font-size: 50px; text-align: center; color: yellow;">Degree Celsius</p>
+            
+            <p class="data">Wind Speed :- <span id="ws">11</span>mph</p>
+            <p class="data">Humidity :- <span id="hmdty">80</span>%</p>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <img width="400px" src="weather.png" alt="">
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
